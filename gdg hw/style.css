@@ -1,0 +1,270 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff00;
+  padding: 10px 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+.nav-options {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 50px;
+}
+
+.nav-options li {
+  position: relative;
+  margin: 0 30px;
+}
+
+.nav-options a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 8px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-options a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-options a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Styling */
+.dropdown .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00000088;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Boolean Button Styling */
+.boolean-button button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boolean-button button:hover {
+  background-color: #3047fc;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #70bdf5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(250, 223, 51);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:after{
+    background-color: #C3C9D1;
+}
+
+input:checked + .slider {
+  background-color: #1C1F2C;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #C3C9D1;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container{
+    display: flex !important;
+    padding: 0 !important;
+    margin-top: 130px!important;
+    margin-bottom: 0;
+}
+
+.headings-main{
+    font-size: 64px;
+    color: black;
+    margin-bottom: 0;
+}
+.img-main{
+    max-width: 670px;
+    max-height: 532px;
+    margin-top: -50px;
+}
+
+.sub-para{
+    font-size: 28px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.btn-primary{
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 44px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border-style: none;
+    transition: all ease 0.3s;
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+    background-color: #7c7dd6;
+}
+
+#grad1{
+    background-color: #c52bec;
+    height: 755px;
+    width: 755px;
+    border-radius: 100%;
+    filter: blur(293.2px);
+    opacity: 0.5;
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    z-index: -1;
+}
+#grad2{
+    background-color: #ff00d0;
+    height: 489px;
+    width: 489px;
+    border-radius: 100%;
+    filter: blur(293.2px);
+    opacity: 0.5;
+    position: absolute;
+    top: 60%;
+    left: -15%;
+    z-index: -1;
+}
+.trans{
+    height: 140px;
+    background-color: black;
+    opacity: 12%;
+    border-radius: 21px;
+    margin-right: 45px;
+    margin-left: 96px;
+    margin-top: 85px;
+
+}
+.img-news{
+    max-width: 639px;
+    max-height: 491px;
+    margin-top: -50px;
+}
+#subhead{
+    padding-right: 163px;
+}
+
+#secondary{
+    margin-top: 30px;
+    background-color: #7c7dd6;
+}
+#secondary:hover{
+    background-color: #00003b;
+}
+#grad3{
+    background-color: #0b8443;
+    height: 489px;
+    width: 489px;
+    border-radius: 100%;
+    filter: blur(293.2px);
+    opacity: 0.6;
+    position: absolute;
+    top:90%;
+    left:90%;
+    z-index: -1;
+}
